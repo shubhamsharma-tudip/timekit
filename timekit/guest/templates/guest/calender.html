@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form method = "POST" action="{% url 'usercalender' %}">
+
+    {% csrf_token %}
+
+  calender:<br>
+  <input type="text" name="calender" value="">
+    <br>
+   description:<br>
+  <input type="text" name="description" value="">
+    <br>
+<input type="hidden" name="email" value="{{  email }}"/>
+    {{ email }}
+
+
+
+
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+</body>
+</html>

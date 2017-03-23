@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form method = "POST" action="{% url 'calender1' %}">
+
+    {% csrf_token %}
+  Email:<br>
+  <input type="email" name="email" value="">
+  <br>
+    password:<br>
+  <input type="password" name="password" value="">
+    <br>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+</body>
+</html>
