@@ -14,9 +14,6 @@ def index(request):
 def auth(request):
     return render(request,"guest/auth.html")
 
-
-
-
 def calender1(request):
     return render(request, "guest/calender.html")
 
